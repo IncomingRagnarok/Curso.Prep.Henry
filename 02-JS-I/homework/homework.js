@@ -67,7 +67,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return str1.lenght === str2.lenght;
+  return str1.length === str2.length;
 }
 
 function menosQueNoventa(num) {
@@ -126,13 +126,13 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.round(num);
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
@@ -193,7 +193,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  return base  * altura;
+  return (base  * altura) / 2;
 }
 
 
@@ -211,8 +211,8 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  var devolucion = "Dato Incorrecto";
-  if(letra.lenght === 1 && "aeiou".indexOf(letra) > -1){
+  var devolucion = "Dato incorrecto";
+  if(letra.length === 1 && "aeiou".indexOf(letra) > -1){
     devolucion = "Es vocal";
   }
   return devolucion;
